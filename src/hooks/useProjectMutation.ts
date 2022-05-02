@@ -36,7 +36,6 @@ const useProjectMutation = (data: ProjectsProps) => {
         name,
         tasks: [],
       };
-      console.log(data.data.createProject.id);
 
       setProjects([...projects, project]);
       toast.success("Project created successfully");
@@ -53,11 +52,9 @@ const useProjectMutation = (data: ProjectsProps) => {
         },
         context: { session },
       });
-      console.log(id);
       toast.success("Project deleted successfully");
       setProjects(projects.filter((project) => project.id !== id));
     } catch (e: any) {
-      console.log(id);
       toast.error(e.message);
     }
   };

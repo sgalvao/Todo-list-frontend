@@ -23,8 +23,6 @@ export async function getServerSideProps(context: GetServerSidePropsContext) {
     query: GET_PROJECTS,
   });
 
-  console.log(loadProjects);
-
   return {
     props: { session, loadProjects },
   };

@@ -11,8 +11,6 @@ interface ITaskProps {
 }
 
 export const Task = ({ task, onChange, onRemove }: ITaskProps) => {
-  console.log(task);
-
   return (
     <S.Container>
       <S.Checkbox
