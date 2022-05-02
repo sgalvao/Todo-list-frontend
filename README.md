@@ -1,4 +1,4 @@
-# React Next Boilerplate
+# Todo List Project
 
 ## What's inside it?
 
@@ -6,21 +6,18 @@
 - [NextJS](https://nextjs.org/docs)
 - [TypeScript](https://www.typescriptlang.org/)
 - [Styled Components](https://styled-components.com/docs)
-- [Jest](https://jestjs.io/docs/en/getting-started)
-- [React Testing Library](https://testing-library.com/docs/react-testing-library/intro)
-- [Storybook](https://storybook.js.org/)
+- [Apollo Client](https://www.apollographql.com/docs/react/)
 - [Eslint](https://eslint.org/)
 - [Prettier](https://prettier.io/)
 - [Husky](https://github.com/typicode/husky)
 - [Plop](https://plopjs.com/) to automatize components creation structure, see more detail [here](https://github.com/rodrigowpl/react-next-boilerplate#components-structure)
 
 ## Dependencies
-- Node js => v10
+- Node js => v14
 
 ## Up and Running
 - Install dependencies `yarn (or npm i)`
 - Run `yarn dev (or npm dev)` to run next development server (it  will be available in `http://localhost:3000`
-- Run `yarn storybook` to run storybook development server (it will be available in `http://localhost:6006`)
 - Run `yarn generate [ComponentName]` to create a new component structure automatically (the result will be generated in `src/components/[ComponentName]`)
 
 ## Available scripts
@@ -36,13 +33,6 @@
 │   ├── /components/
 │       ├── /[ComponentName]/
             ├── /index.tsx/   # Component file
-            ├── /stories.tsx/ # Component Storybook story
             ├── /styles.ts/   # Component styled-components styles
             ├── /test.tsx/    # Component test file
 ```
-
-
-## How to use it?
-Run `yarn create next-app -e https://github.com/divisioinc/divisio-frontend-next-boilerplate`
-
-Enjoy it :)
